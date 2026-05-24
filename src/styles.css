@@ -64,7 +64,7 @@
 :root {
   --radius: 1rem;
   /* LIGHT THEME — soft blue-tinted surfaces */
-  --background: oklch(0.985 0.005 240);
+  --background: oklch(1 0 0);
   --foreground: oklch(0.18 0.03 250);
   --card: oklch(1 0 0 / 0.7);
   --card-foreground: oklch(0.18 0.03 250);

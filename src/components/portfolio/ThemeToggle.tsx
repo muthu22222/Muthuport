@@ -9,12 +9,7 @@ export function ThemeToggle() {
       | "light"
       | "dark"
       | null;
-    const initial: "light" | "dark" =
-      stored ??
-      (typeof window !== "undefined" &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "dark");
+    const initial: "light" | "dark" = stored ?? "light";
     setTheme(initial);
     document.documentElement.classList.toggle("dark", initial === "dark");
   }, []);
