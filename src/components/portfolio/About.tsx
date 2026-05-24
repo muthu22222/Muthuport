@@ -74,8 +74,8 @@ export function About() {
                   transition={{ duration: 0.5, delay: i * 0.1 }}
                   className="glass relative ml-2 flex gap-4 rounded-2xl p-5"
                 >
-                  <div className="relative -ml-12 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-primary to-accent glow-purple">
-                    <item.icon className="h-5 w-5 text-primary-foreground" />
+                  <div className="relative -ml-12 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary glow-purple">
+                    <item.icon className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <div className="text-xs uppercase tracking-wider text-primary">

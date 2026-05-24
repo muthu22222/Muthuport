@@ -31,8 +31,8 @@ export function Certificates() {
               className={`glass group relative flex flex-col justify-between overflow-hidden rounded-3xl p-6 ${it.span}`}
             >
               <div className="absolute -bottom-10 -right-10 h-40 w-40 rounded-full bg-accent/20 blur-3xl opacity-0 transition-opacity group-hover:opacity-100" />
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-accent glow-purple">
-                <it.icon className="h-6 w-6 text-primary-foreground" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary glow-purple">
+                <it.icon className="h-6 w-6 text-white" />
               </div>
               <div>
                 <h3 className="font-display text-lg font-semibold leading-tight">{it.title}</h3>
