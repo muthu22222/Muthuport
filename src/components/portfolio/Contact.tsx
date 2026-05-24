@@ -20,8 +20,8 @@ export function Contact() {
               href="mailto:muthukumaran@example.com"
               className="glass group flex items-center gap-4 rounded-2xl p-5 transition-all hover:bg-white/5"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-primary to-accent">
-                <Mail className="h-5 w-5 text-primary-foreground" />
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary">
+                <Mail className="h-5 w-5 text-white" />
               </div>
               <div>
                 <div className="text-xs text-muted-foreground">Email</div>
@@ -52,7 +52,7 @@ export function Contact() {
                   <a
                     key={i}
                     href={href}
-                    className="glass flex h-11 w-11 items-center justify-center rounded-xl transition-all hover:scale-110 hover:bg-primary/20"
+                    className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-white transition-all hover:scale-110"
                   >
                     <Icon className="h-4 w-4" />
                   </a>
