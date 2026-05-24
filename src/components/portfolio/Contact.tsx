@@ -52,7 +52,7 @@ export function Contact() {
                   <a
                     key={i}
                     href={href}
-                    className="glass flex h-11 w-11 items-center justify-center rounded-xl transition-all hover:scale-110 hover:bg-primary/20"
+                    className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary text-white transition-all hover:scale-110"
                   >
                     <Icon className="h-4 w-4" />
                   </a>

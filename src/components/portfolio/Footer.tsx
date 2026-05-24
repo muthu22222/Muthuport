@@ -12,7 +12,7 @@ export function Footer() {
             <a
               key={i}
               href="#"
-              className="glass flex h-9 w-9 items-center justify-center rounded-lg transition-all hover:scale-110 hover:bg-primary/20"
+              className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-white transition-all hover:scale-110"
             >
               <Icon className="h-3.5 w-3.5" />
             </a>
