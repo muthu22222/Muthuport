@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
   { label: "Home", href: "#home" },
@@ -46,22 +47,28 @@ export function Navbar() {
               </li>
             ))}
           </ul>
-          <a
-            href="#contact"
-            className="hidden rounded-full bg-gradient-to-r from-primary to-accent px-5 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-105 md:inline-block"
-          >
-            Hire Me
-          </a>
-          <button
+          <div className="hidden items-center gap-3 md:flex">
+            <ThemeToggle />
+            <a
+              href="#contact"
+              className="rounded-full bg-gradient-to-r from-primary to-accent px-5 py-2 text-sm font-medium text-primary-foreground transition-transform hover:scale-105"
+            >
+              Hire Me
+            </a>
+          </div>
+          <div className="flex items-center gap-2 md:hidden">
+            <ThemeToggle />
+            <button
             onClick={() => setOpen(!open)}
-            className="md:hidden text-foreground"
+            className="text-foreground"
             aria-label="Toggle menu"
           >
             <div className="space-y-1.5">
               <span className="block h-0.5 w-6 bg-foreground"></span>
               <span className="block h-0.5 w-6 bg-foreground"></span>
             </div>
-          </button>
+            </button>
+          </div>
         </div>
         {open && (
           <motion.div
