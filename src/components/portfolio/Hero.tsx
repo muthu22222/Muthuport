@@ -212,13 +212,18 @@ export function Hero() {
 
           {/* Download Resume Button */}
           <div className="mt-20 sm:mt-28 flex justify-center z-30">
-            <button
-              onClick={() => downloadFile(resumePdf || resume, "Muthukumaran_Resume.pdf")}
+            <a
+              href={resumePdf || "/Muthukumaran_Resume.pdf"}
+              download="Muthukumaran_Resume.pdf"
+              onClick={(e) => {
+                e.preventDefault();
+                downloadFile(resumePdf || "/Muthukumaran_Resume.pdf", "Muthukumaran_Resume.pdf");
+              }}
               className="glass inline-flex items-center gap-2 rounded-full border border-primary/30 hover:border-primary/60 px-5 py-2.5 text-xs font-display font-bold text-foreground hover:text-primary transition-all duration-300 hover:scale-105 bg-background/40 hover:bg-primary/5 shadow-md pointer-events-auto cursor-pointer"
             >
               <Download className="h-4 w-4 text-primary" />
               Download Resume
-            </button>
+            </a>
           </div>
         </motion.div>
       </div>
